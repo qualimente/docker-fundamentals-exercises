@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+
+  wordpress:
+    image: wordpress:4.6.1-php5.6-apache
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: insecure
+
+  mysql:
+    image: mariadb:10.1.19
+    environment:
+          MYSQL_ROOT_PASSWORD: insecure

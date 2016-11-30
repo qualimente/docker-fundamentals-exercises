@@ -1,6 +1,6 @@
 FROM centos:7.2.1511
 
-ENV PACKAGE_DEPS='java'
+ENV PACKAGE_DEPS='java-1.8.0-openjdk.x86_64'
 
 RUN yum -y update \
   && yum -y install $PACKAGE_DEPS \

@@ -7,7 +7,7 @@ This goal of this exercise is to containerize a Java web service that runs from 
 The application should use:
 
 * a CentOS 7 base image
-* a recent build of Java 1.8
+* a recent build of Java 11
 * a non-privileged user
 * a non-privileged host port
 * JVM configuration options that can be overridden at runtime, but default to `-Xms1024m -Xmx1024m -XX:+UseG1GC`
